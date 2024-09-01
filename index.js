@@ -31,12 +31,12 @@ document.getElementById('fileInput').addEventListener('change', function (event)
         var rowIndex = 0;
         jsonData.forEach(element => {
             var row = table.insertRow(rowIndex);
-            var celIndex = 0;
+            //var celIndex = 0;
             for (let i = 0; i < element.length; i++) {
                 //console.log(element[i]);
-                var cell1 = row.insertCell(celIndex);
+                var cell1 = row.insertCell(i);
                 cell1.innerHTML = element[i];
-                celIndex++;
+                //celIndex++;
             }
             //const vlaues = element.split(",");
             //document.getElementById('output').innerHTML = element;
